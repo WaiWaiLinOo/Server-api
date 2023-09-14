@@ -1,3 +1,3 @@
 module.exports = {
-  url: "mongodb://0.0.0.0:27017/test"
+  url: "mongodb+srv://wailinoo:1381997wai@wailinoo-api.e7ewv3q.mongodb.net/"
 };
