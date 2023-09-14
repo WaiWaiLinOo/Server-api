@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-
+const tutorials = require("./app/controllers/tutorial.controller");
 const app = express();
 
 var corsOptions = {
@@ -33,6 +33,7 @@ db.mongoose
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to bezkoder application." });
 });
+app.get("/all", tutorials.findAll);
 
 require("./app/routes/turorial.routes")(app);
 
